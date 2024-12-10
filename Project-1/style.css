@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+}
+
+#page1 h2 {
+  color: mediumturquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 10vw;
+  font-family: "Poppins", sans-serif;
+}
+
+#page2 h2 {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 40vw;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+#page1 #name {
+  color: #000;
+}
