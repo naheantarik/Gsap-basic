@@ -61,7 +61,7 @@ gsap.from("#page1 #name4", {
 });
 
 gsap.to("#page2 h2", {
-  transform: "translateX(-120%)",
+  transform: "translateX(-150%)",
   scrollTrigger: {
     trigger: "#page2",
     scroller: "body",
@@ -78,4 +78,30 @@ gsap.to("#page3 #box", {
   delay: 1,
   repeat: -1,
   yoyo: true,
+  borderRadius: "50%",
+});
+
+var path = "M 10 100 Q 500 100 990 100";
+var finalPath = "M 10 100 Q 500 100 990 100";
+
+var element = document.querySelector("#page4");
+
+element.addEventListener("mousemove", function (dets) {
+  path = `M 10 100 Q 500 ${dets.y} 990 100`;
+
+  gsap.to("#page4 svg path", {
+    attr: {
+      d: path,
+      duration: 0.3,
+      ease: "power3.Out",
+    },
+  });
+});
+
+element.addEventListener("mouseleave", function () {
+  gsap.to("svg path", {
+    attr: {
+      d: finalPath,
+    },
+  });
 });
