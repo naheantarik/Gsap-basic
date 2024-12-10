@@ -71,3 +71,9 @@ gsap.to("#page2 h2", {
     pin: true,
   },
 });
+
+gsap.to("#page3 #box", {
+  x: 1000,
+  duration: 2,
+  delay: 1,
+});
