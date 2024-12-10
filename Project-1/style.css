@@ -44,3 +44,15 @@ body {
 #page1 #name {
   color: #000;
 }
+
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+#page3 #box {
+  height: 300px;
+  width: 300px;
+  background-color: mediumaquamarine;
+}
