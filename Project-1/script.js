@@ -76,4 +76,6 @@ gsap.to("#page3 #box", {
   x: 1000,
   duration: 2,
   delay: 1,
+  repeat: -1,
+  yoyo: true,
 });
